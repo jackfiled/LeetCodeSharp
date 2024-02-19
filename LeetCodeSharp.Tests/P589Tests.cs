@@ -1,4 +1,4 @@
-﻿using LeetCodeSharp.Problems;
+﻿using LeetCodeSharp.Problems589;
 using LeetCodeSharp.Utils;
 
 namespace LeetCodeSharp.Tests;

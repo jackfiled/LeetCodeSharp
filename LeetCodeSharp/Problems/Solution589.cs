@@ -6,7 +6,7 @@
 using LeetCodeSharp.Utils;
 using System.Collections.Generic;
 
-namespace LeetCodeSharp.Problems
+namespace LeetCodeSharp.Problems589
 {
 
     // Submission codes start here
@@ -30,7 +30,7 @@ public class Node {
 }
 */
 
-    public partial class Solution
+    public class Solution
     {
         public IList<int> Preorder(Node root)
         {
