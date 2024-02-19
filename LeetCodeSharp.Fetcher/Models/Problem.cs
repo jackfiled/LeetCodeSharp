@@ -5,12 +5,11 @@ namespace LeetCodeSharp.Fetcher.Models;
 internal class Problem
 {
     private const string Template = """
-                                    /**
-                                    * [__PROBLEM_ID__] __PROBLEM_TITLE__
-                                    */
+                                    // [__PROBLEM_ID__] __PROBLEM_TITLE__
+
                                     __EXTRA_USE__
                                     
-                                    namespace LeetCodeSharp.Problems
+                                    namespace LeetCodeSharp.Problems__PROBLEM_ID__
                                     {
 
                                         // Submission codes start here
@@ -35,7 +34,7 @@ internal class Problem
 
     public string GetFilename()
     {
-        return $"p{QuestionId}_{TitleSlug.Replace('-', '_')}.cs";
+        return $"Solution{QuestionId}.cs";
     }
 
     public string GetFileContent()
@@ -56,8 +55,8 @@ internal class Problem
             template = Template.Replace("__EXTRA_USE__", string.Empty);
         }
 
-        return template.Replace("__PROBLEM_ID__", Title)
-            .Replace("__PROBLEM_TITLE__", QuestionId.ToString())
+        return template.Replace("__PROBLEM_ID__", QuestionId.ToString())
+            .Replace("__PROBLEM_TITLE__", Title)
             .Replace("__PROBLEM_CODE__", code.DefaultCode);
     }
 
