@@ -10,7 +10,7 @@ namespace LeetCodeSharp.Problems2296
 
     public class TextEditor
     {
-        private readonly LinkedList<char> _text = new LinkedList<char>();
+        private readonly LinkedList<char> _text = new();
 
         // 让游标就是光标左边的字符
         private LinkedListNode<char> _cursor;

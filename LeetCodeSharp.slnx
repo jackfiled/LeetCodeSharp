@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="justfile" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="LeetCodeSharp.Fetcher/LeetCodeSharp.Fetcher.csproj" />
+  <Project Path="LeetCodeSharp.Tests/LeetCodeSharp.Tests.csproj" />
+  <Project Path="LeetCodeSharp/LeetCodeSharp.csproj" />
+</Solution>
